@@ -1,19 +1,19 @@
 {
   "canisters": {
-    "dfinity_vue": {
-      "main": "src/dfinity_vue/main.mo",
+    "league": {
+      "main": "src/league/main.mo",
       "type": "motoko"
     },
-    "dfinity_vue_assets": {
+    "league_assets": {
       "dependencies": [
-        "dfinity_vue"
+        "league"
       ],
       "frontend": {
-        "entrypoint": "src/dfinity_vue_assets/src/index.html"
+        "entrypoint": "src/league_assets/src/index.html"
       },
       "source": [
-        "src/dfinity_vue_assets/assets",
-        "dist/dfinity_vue_assets/"
+        "src/league_assets/assets",
+        "dist/league_assets/"
       ],
       "type": "assets"
     }
