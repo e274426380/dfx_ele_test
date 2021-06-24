@@ -1,5 +1,25 @@
 # League
 
+Start the Internet Computer network on your local computer in your second terminal by running the following command:
+
+```
+dfx start
+```
+
+Deploy Application
+
+```
+dfx deploy
+```
+
+Visit:
+
+Append `/?canisterId=` and the `league_assets` identifier to the URL.
+
+For example, the full URL should look similar to the following:
+
+http://127.0.0.1:8000/?canisterId=ryjl3-tyaaa-aaaaa-aaaba-cai
+
 ## Troubleshooting
 
 ### Missing node signing public key
@@ -30,5 +50,3 @@ For a clean installation instead of an upgrade, run:
 [sdk]: https://sdk.dfinity.org/docs/index.html
 [project]: https://sdk.dfinity.org/docs/developers-guide/tutorials/explore-templates.html
 [vuetify]: https://vuetifyjs.com/
-[]: 
-[]: 
