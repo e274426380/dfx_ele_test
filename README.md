@@ -3,6 +3,7 @@
 Start the Internet Computer network on your local computer in your second terminal by running the following command:
 
 ```
+yarn install
 dfx start
 ```
 
