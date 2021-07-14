@@ -61,11 +61,51 @@ function generateWebpackConfigForCanister(name, info, env) {
       filename: "[name].js",
       path: path.join(__dirname, "dist", name),
     },
-    module: {
-      rules: [
-        { test: /\.vue$/, loader: "vue-loader" }
-      ]
-    },
+   // module: {
+   //   rules: [
+    //    { test: /\.vue$/, loader: "vue-loader" }
+    //  ]
+   // },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          'vue-style-loader',
+          'css-loader'
+        ],
+      },
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader',
+        options: {
+          loaders: {
+          }
+          // other vue-loader options go here
+        }
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        loader: 'file-loader'
+      },    
+      // {  
+      //   test: /\.css$/,  
+      //   loader: 'style-loader!css-loader'  
+      // },
+     // {
+       // test: /\.js$/,
+      //  loader: 'babel-loader',
+    //    exclude: /node_modules/
+     // },
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]?[hash]'
+        }
+      }
+    ]
+  },
     plugins: [
       new VueLoaderPlugin(),
       new HtmlWebpackPlugin({

@@ -1,5 +1,5 @@
 {
-  "name": "league",
+  "name": "ele_test",
   "version": "0.1.0",
   "description": "",
   "keywords": [],
@@ -21,6 +21,10 @@
     "webpack-cli": "4.5.0"
   },
   "dependencies": {
+    "css-loader": "^5.2.7",
+    "element-ui": "^2.15.3",
+    "file-loader": "^6.2.0",
+    "style-loader": "^3.1.0",
     "vue": "^2.6.12"
   }
 }

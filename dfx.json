@@ -1,19 +1,19 @@
 {
   "canisters": {
-    "league": {
-      "main": "src/league/main.mo",
+    "ele_test": {
+      "main": "src/ele_test/main.mo",
       "type": "motoko"
     },
-    "league_assets": {
+    "ele_test_assets": {
       "dependencies": [
-        "league"
+        "ele_test"
       ],
       "frontend": {
-        "entrypoint": "src/league_assets/src/index.html"
+        "entrypoint": "src/ele_test_assets/src/index.html"
       },
       "source": [
-        "src/league_assets/assets",
-        "dist/league_assets/"
+        "src/ele_test_assets/assets",
+        "dist/ele_test_assets/"
       ],
       "type": "assets"
     }
